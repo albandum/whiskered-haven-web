@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X, Shield } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Available Cats", path: "/cats" },
+    { name: "Available Courses", path: "/courses" },
     { name: "About Us", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -25,12 +25,12 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="bg-gradient-to-r from-pink-500 to-purple-600 p-2 rounded-full group-hover:scale-110 transition-transform duration-300">
-              <Heart className="h-6 w-6 text-white" />
+            <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-full group-hover:scale-110 transition-transform duration-300">
+              <Shield className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-800">Whiskers Haven</h1>
-              <p className="text-sm text-gray-600">Cat Rescue</p>
+              <h1 className="text-xl font-bold text-gray-800">CyberSecure Academy</h1>
+              <p className="text-sm text-gray-600">Professional Training</p>
             </div>
           </Link>
 
@@ -42,15 +42,15 @@ const Navigation = () => {
                 to={item.path}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   isActive(item.path)
-                    ? "bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg"
-                    : "text-gray-700 hover:text-pink-600 hover:bg-pink-50"
+                    ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg"
+                    : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Button className="ml-4 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white rounded-full px-6">
-              Donate
+            <Button className="ml-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full px-6">
+              Enroll Now
             </Button>
           </div>
 
@@ -75,16 +75,16 @@ const Navigation = () => {
                   to={item.path}
                   className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
                     isActive(item.path)
-                      ? "bg-gradient-to-r from-pink-500 to-purple-600 text-white"
-                      : "text-gray-700 hover:text-pink-600 hover:bg-pink-50"
+                      ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
+                      : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Button className="mt-2 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white rounded-lg">
-                Donate
+              <Button className="mt-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-lg">
+                Enroll Now
               </Button>
             </div>
           </div>

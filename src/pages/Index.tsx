@@ -2,14 +2,14 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Users, Home as HomeIcon } from "lucide-react";
+import { Shield, Users, Award } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import FeaturedCats from "@/components/FeaturedCats";
+import FeaturedCourses from "@/components/FeaturedCourses";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50">
       <Navigation />
       
       {/* Hero Section */}
@@ -17,23 +17,23 @@ const Index = () => {
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4 tracking-tight">
-              Welcome to
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">
-                Whiskers Haven
+              Master
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+                Cybersecurity
               </span>
-              <span className="text-3xl md:text-4xl font-normal text-gray-600">Cat Rescue</span>
+              <span className="text-3xl md:text-4xl font-normal text-gray-600">with Expert Training</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Every whisker tells a story, every purr holds a promise. We're dedicated to finding loving forever homes for cats in need, one heart at a time.
+              Advance your career with industry-leading cybersecurity courses. Learn from experts, earn certifications, and build the skills to protect organizations from evolving threats.
             </p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button asChild size="lg" className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
-              <Link to="/cats">Meet Our Cats</Link>
+            <Button asChild size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
+              <Link to="/courses">Browse Courses</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-2 border-pink-300 text-pink-600 hover:bg-pink-50 px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300">
-              <Link to="/about">Learn About Us</Link>
+            <Button asChild variant="outline" size="lg" className="border-2 border-blue-300 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300">
+              <Link to="/about">Learn More</Link>
             </Button>
           </div>
 
@@ -41,23 +41,23 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-16">
             <Card className="bg-white/70 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6 text-center">
-                <Heart className="h-12 w-12 text-pink-500 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">500+</h3>
-                <p className="text-gray-600">Cats Rescued</p>
+                <Shield className="h-12 w-12 text-blue-500 mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">10+</h3>
+                <p className="text-gray-600">Specialized Courses</p>
               </CardContent>
             </Card>
             <Card className="bg-white/70 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6 text-center">
                 <Users className="h-12 w-12 text-purple-500 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">450+</h3>
-                <p className="text-gray-600">Happy Adoptions</p>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">2500+</h3>
+                <p className="text-gray-600">Students Trained</p>
               </CardContent>
             </Card>
             <Card className="bg-white/70 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6 text-center">
-                <HomeIcon className="h-12 w-12 text-blue-500 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">15</h3>
-                <p className="text-gray-600">Years of Service</p>
+                <Award className="h-12 w-12 text-indigo-500 mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">95%</h3>
+                <p className="text-gray-600">Certification Rate</p>
               </CardContent>
             </Card>
           </div>
@@ -69,19 +69,19 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Mission</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            At Whiskers Haven Cat Rescue, we believe every cat deserves a chance at happiness. 
-            We rescue, rehabilitate, and rehome cats from all walks of life, providing them with 
-            medical care, love, and patience while they wait for their perfect match. Our dedicated 
-            team works tirelessly to ensure each feline friend finds not just a house, but a true home.
+            At CyberSecure Academy, we bridge the cybersecurity skills gap by providing world-class training 
+            that prepares professionals for real-world challenges. Our comprehensive curriculum, expert instructors, 
+            and hands-on labs ensure you gain practical skills that employers value. Whether you're starting your 
+            cybersecurity journey or advancing your expertise, we have the courses to accelerate your career.
           </p>
-          <Button asChild className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 py-2 rounded-full font-semibold">
-            <Link to="/about">Read Our Full Story</Link>
+          <Button asChild className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-2 rounded-full font-semibold">
+            <Link to="/about">Learn About Our Approach</Link>
           </Button>
         </div>
       </section>
 
-      {/* Featured Cats */}
-      <FeaturedCats />
+      {/* Featured Courses */}
+      <FeaturedCourses />
 
       <Footer />
     </div>
