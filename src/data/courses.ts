@@ -212,10 +212,10 @@ export const courses: Course[] = [
     prerequisites: ["Mathematics background", "Programming experience", "Advanced security knowledge"],
     certification: "Certified Encryption Specialist (CES)",
     price: 749,
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=500&h=500&fit=crop",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500&h=500&fit=crop",
     gallery: [
-      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800&h=600&fit=crop"
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
     ],
     isAccredited: true,
     includesLabs: true,
