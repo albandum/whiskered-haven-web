@@ -14,7 +14,7 @@ const Footer = () => {
                 <Shield className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">CyberSecure Academy</h3>
+                <h3 className="text-xl font-bold">Glittery Helmet Academy</h3>
                 <p className="text-sm text-gray-300">Professional Training</p>
               </div>
             </div>
@@ -50,13 +50,13 @@ const Footer = () => {
               <p>123 Cyber Security Blvd</p>
               <p>Tech City, TC 12345</p>
               <p>Phone: (555) 123-CYBER</p>
-              <p>Email: info@cybersecureacademy.com</p>
+              <p>Email: info@glitteryhelmetacademy.com</p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 CyberSecure Academy. All rights reserved. Securing the future, one professional at a time.</p>
+          <p>&copy; 2024 Glittery Helmet Academy. All rights reserved. Securing the future, one professional at a time.</p>
         </div>
       </div>
     </footer>
